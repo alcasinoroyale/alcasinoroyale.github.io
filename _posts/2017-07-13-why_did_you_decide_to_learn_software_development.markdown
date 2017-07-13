@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "Why did you decide to learn software development?"
+date:   2017-07-13 01:35:04 +0000
+---
+
+Building and creating have always been passions of mine from an early age. Whether it was spending hours constructing things with Legos, sketching floor plans of houses, or building my communities of SIMS, I was constantly trying to craft my own masterpiece, something imaginative and unique. I also learned how to use and navigate a computer pretty quickly so I would spend a good amount of time using Adobe Creative Suite, CAD, and Blender. With that in mind, I became very interested in pursuing architecture in high school, but it was never something I followed through with. When I started applying to colleges, journalism seemed like a much easier route until I decided what I really wanted to do. Writing was also one of my strengths so I figured it could be something enjoyable
+
+I kept going back and forth through each semester, contemplating whether journalism was the track I wanted to follow, and eventually started taking film study courses as part of my minor. This not only allowed me to analyze films but really consider all of the elements that go into the production of one. Being mellow as well as an introvert in the current environment surrounding media didn’t necessarily make jumping into journalism an appealing career path. I always liked working behind-the-scenes instead of interviewing and being on camera. However, I did gain some experience in both settings, researching and writing articles for the college newspaper as well as working as production assistant on the university network. 
+
+During my fall semester of junior year, I took a class called Multimedia Production and went in not knowing what to expect, but it captivated me instantly once I started my first project. It combined all of the areas that I loved doing: the behind-the-scenes and tech-savvy elements, the writing, and the building into one place. I even started loving it more than what I was studying. There were days where I spent more time experimenting with code than with writing my next news assignment. However, I continued working towards my degree in hopes that I could still find a job. 
+
+After I graduated with a BA in journalism, I continued interning for a startup software company called KYA, which specialized in providing analytics for digital publishers. This is what shifted my interest to web and software development instead of journalism because it reintroduced me to code. For a while, I had contemplated whether going back to school was the right decision and finally found the Flatiron. Software Development gives me the ability to apply both my technical and creative sides that I developed during my college years. Coding is not only fun, but also a valuable skill to learn, especially when our exposure and activity level on the Internet has grown significantly. And I’m very excited for the adventure ahead.
+
