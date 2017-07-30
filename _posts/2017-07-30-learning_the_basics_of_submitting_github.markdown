@@ -11,7 +11,7 @@ First, you would want to create a new directory to hold all of the project files
 
 After you've switched into the directory for your new project, the first part is figuring out the motions of branches. Each project will give you the ability to use branches at your own leisure, but the initial one is the master. Anything that is in the master can be ambulatory so if you're working on a new feature for your project, it's imperative that you create a new branch. Creating branches will allow you to experiment and commit changes to GitHub that won't affect the master. This way you can save all of your code before you decide to publish it as the final product. 
 
-In order to create a new branch, you will want to use your terminal again. Currently, it will showcase that you're on the master branch, which you'll come back to later. So if I decided to name the branch "stranger things" I would type "git checkout -b stranger_things" into my terminal. 
+In order to create a new branch, you will want to use your terminal again. Currently, it will showcase that you're on the master branch, which you'll come back to later. If I decided to name the new branch "stranger things" I would type "git checkout -b stranger_things" into my terminal. 
 
 Similar to the directory, it will switch into the new addition to the project. Now, you'll have the ability to edit all of your files on the stranger_things branch.
 
@@ -27,7 +27,7 @@ Once you've successfully developed, revised, and polished the code on your speci
 
 5. In order to merge "stranger_things" with the master, you will want to type "git merge stranger_things" into your terminal. This will then lead to the final step.
 
-6. Finally, once you've merged your branches with the master, you can then write "git push origin master" to submit the complete project to GitHub. The function "push" will essentially push all of the changes you've made to the i_love_coding repository in your profile.
+6. Finally, once you've merged your branches with the master, you can then write "git push origin master" to submit the complete project to GitHub. This will push all of the changes you've made to the i_love_coding repository in your profile.
 
-Before I started learning code, I only knew a rough sketch of HTML and CSS. Finally knowing how to use "git" definitely helped me comprehend how to track changes successfully. It's a fairly convenient control system to follow once you get the gist of it. Always make sure that when you are submitting changes to GitHub, all of the modified files you want are in the project directory and branch that you're on.
+Before I started learning code, I only knew a rough sketch of HTML and CSS. Finally knowing how to use "git" definitely helped me comprehend how to track changes successfully. It's a fairly convenient control system to follow once you get the gist of it. Always make sure that when you are finally submitting changes to GitHub, all of the modified files you want are in the project directory and branch that you're on.
 
