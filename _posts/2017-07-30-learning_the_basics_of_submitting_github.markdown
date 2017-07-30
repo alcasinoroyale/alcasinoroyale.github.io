@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Learning the basics of submitting GitHub"
-date:   2017-07-30 06:32:05 +0000
+title:  "Learning the basics of submitting to GitHub"
+date:   2017-07-30 02:32:06 -0400
 ---
 
 
@@ -29,5 +29,5 @@ Once you've successfully developed, revised, and polished the code on your speci
 
 6. Finally, once you've merged your branches with the master, you can then write "git push origin master" to submit the complete project to GitHub. The function "push" will essentially push all of the changes you've made to the i_love_coding repository in your profile.
 
-Before I started learning code, I only knew a rough sketch of HTML and CSS. Finally knowing how to use "git" definitely helped me comprehend how to track changes successfully. It's a fairly convenient control system to follow once you get the gist of it. Always make sure that when you are submitting changes to GitHub, all of the modified files you want are in the project directory and branch.
+Before I started learning code, I only knew a rough sketch of HTML and CSS. Finally knowing how to use "git" definitely helped me comprehend how to track changes successfully. It's a fairly convenient control system to follow once you get the gist of it. Always make sure that when you are submitting changes to GitHub, all of the modified files you want are in the project directory and branch that you're on.
 
