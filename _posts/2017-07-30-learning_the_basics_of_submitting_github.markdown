@@ -23,7 +23,7 @@ Once you've successfully developed, revised, and polished the code on your speci
 
 3. Moving forward with git add . - Always use this so that you can stage all of the changes. If there is a specific file with new changes, then you would also add the filename, otherwise using "git add ." will stage all of the files that you've made changes to. For example, if I had an index.html, I would type git add . "index html" into my terminal. 
 
-4. The fourth step is git commit -m "insert your own message here" For every commit that you submit to GitHub, you'll want to include a brief description for the file(s). Especially when you're personalizing a new branch, using commit messages is a more collaborative way of showcasing the changes.
+4. After you've staged all of the changes, you also want to make note and include a brief description for the file(s). Write "git commit -m 'insert your message here' into your terminal and it will send the message forward. This is especially useful if you're collaborating with someone or personalizing a new branch in the project.
 
 5. In order to merge "stranger_things" with the master, you will want to type "git merge stranger_things" into your terminal. This will then lead to the final step.
 
