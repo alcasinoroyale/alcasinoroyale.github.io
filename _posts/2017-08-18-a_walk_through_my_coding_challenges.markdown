@@ -1,10 +1,10 @@
 ---
 layout: post
 title:  "A Walk Through My Coding Challenges"
-date:   2017-08-18 06:08:10 +0000
+date:   2017-08-18 02:08:11 -0400
 ---
 
-As programmers, we are always looking for the most efficient solutions when it comes to writing our code. It's been nearly two months since I started at the Flatiron school and so far it's been an incredible experience. Before diving into Ruby and Git, I had only been familiar with HTML and CSS. I'm beginning to visualize all the variety of content that you can create through these programming languages. I've found Ruby to be quite intriguing, particularly how it builds on object relationships. I've been taking it one day at a time, trying to become proficient with Ruby, but more recently I've encountered some interesting issues. 
+As programmers, we are always looking for the most efficient solutions when it comes to writing our code. It's been nearly two months since I started at the Flatiron school and so far it's been an incredible experience. Before diving into Ruby and Git, I had only been familiar with HTML and CSS. Learning Ruby has been both exciting, but also a challenge, but I'm beginning to visualize all the variety of content that you can create with it. I've found Ruby to be quite intriguing, particularly how it builds on object relationships. I've been taking it one day at a time, trying to become proficient with Ruby, but more recently I've encountered some interesting issues. 
 
 While working on some of the labs in Object Oriented Ruby, I found myself struggling to get the tests to pass. I had been following closely with the lessons and taking notes to comprehend the concepts, but something seemed off. Through each lab, I kept looking through the code, trying to find where the errors were arising. Then, I realized it was for some of the silliest mistakes imaginable such as not putting "end" in all the appropriate places, having classes as lowercase, and even using curly brackets instead of parentheses. It became humorous and frustrating that I continued to encounter these issues as it would be taking hours to work through it. As someone who used to write consistently as a journalism major, it becomes a bit discomforting. I tend to think it becomes a result of typing too fast and not taking my time. Though there are some obvious similiarities between blogging and coding, they involve a different type of perspective of learning. 
 
