@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Back Online"
+title:  "Back Online: Reintro to Object Oriented Ruby"
 date:   2017-09-25 16:58:13 -0400
 ---
 
