@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Back Online"
-date:   2017-09-25 20:58:12 +0000
+title:  "Back Online and Ready to Learn"
+date:   2017-09-25 16:58:13 -0400
 ---
 
 
