@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Rails with JS Project: Expanding Renecades"
-date:       2019-06-27 19:33:18 +0000
+date:       2019-06-27 15:33:19 -0400
 permalink:  rails_with_js_project_expanding_renecades
 ---
 
@@ -19,9 +19,9 @@ Since I have the index and create actions respond to both the html and json form
 
 ![](https://i.imgur.com/EFQY7sN.png)
 
-Depending on the data that's posted, it will change the ordered list of games. For each game on the index page that a user clicks on, it will provide with some basic info about the game. If they want to view more details, they can click on the game link and it will navigate to the new url for that specific game. Once I was able to successfully implement the prototype for Game, everything worked a lot more efficiently. Even though my comfort level with Javascript significantly improve throughout this project, there is always more to digest and expand on moving forward. 
+Depending on the data that's posted, it will change the ordered list of games. For each game on the index page that a user clicks on, it will provide some basic info about the game including the description and reward points. If they want to view more details, they can click on the game link and it will navigate to the new URL for that specific game. Once I was able to successfully implement the prototype for Game, everything worked a lot more efficiently. Even though my comfort level with Javascript significantly improve throughout this project, there is always more to digest and expand on moving forward. 
 
-Another feature added to the show page was the next game button where a user can jump to the next game in the list without having to change the URL. In the games.js file, I built the function using parseInt and increment by 1 to return the next game in the iterated list based on the ID. It will then append to the DOM and display the attributes that are provided in the formatShow prototype object for a game. I used the join method in order to add current players if there are any, otherwise that part won't render on the page.
+Another feature added to the show page was the next game button where a user can jump to the next game in the list without having to change the URL. In the games.js file, I built the function using parseInt and increment by 1 to return the next game in the iterated list based on the ID. It will then append to the DOM and display the attributes that are provided in the formatShow prototype object for a game. I used the join method in order to add current players if there are any, otherwise, that part won't render on the page.
 
-One of the biggest takeaways from the project was patience. Experimenting and testing your code can be a time consuming process, but it's also where you absorb the most valueable information. It was good to have the Javascript guides a reference because the vocabulary is endless. It's important to stay organized and remember that debugging can often take the longest, but the task becomes less daunting with more practice. The code could look amazing from a visual prespective, but refactoring is an insturmental component in becoming a successful programmer. 
+One of the biggest takeaways from the project was patience. Experimenting and testing your code can be a time-consuming process, but it's also where you absorb the most valuable information. It was good to have the Javascript guides a reference because the vocabulary is endless. It's important to stay organized and remember that debugging can often take the longest, but the task becomes less daunting with more practice. The code could look amazing from a visual perspective, but refactoring is an instrumental component in becoming a successful programmer. 
 
