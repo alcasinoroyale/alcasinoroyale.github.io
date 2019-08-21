@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Reel 2 Real: React-Redux Portfolio Project"
-date:       2019-08-21 18:59:55 +0000
+date:       2019-08-21 14:59:55 -0400
 permalink:  reel_2_real_react-redux_portfolio_project
 ---
 
@@ -9,17 +9,21 @@ When I first reached this project, it was a difficult situation because I was al
 
 Throughout the curriculum, I have hit more roadblocks than I anticipated. I loved coding and the ability to design and build apps and websites, but lacked the mindset to get done in fear of not performing well. And with this project, it became more enjoyable because problem-solving and debugging was a lot easier than before. I wasn't struggling to try to fix errors or look for the right answer. It was about understanding the steps to get there, staying organized, having a positive mindset, and a much better-rounded direction of what I wanted to create. Hours of studying and practicing we’re finally paying off.
 
-For this project, I decided to create a film search app because it was something where I could not only showcase my skills, but also the idea offered valuable challenges that I rarely encounter with my earlier projects. While thousands of apps capture the same purpose such as IMDB and Letterboxd, coding all of that on your own is a massive undertaking. Obviously to create those sites from scratch while also putting your own spin on it could be something done, but it goes beyond the requirements of this project. So I built Reel 2 Real focusing more on the key features that users would interact with. 
-
 ![](https://i.imgur.com/zOoOKLn.jpg)
+
+For this project, I decided to create a film search app because it was something where I could not only showcase my skills, but also the idea offered valuable challenges that I rarely encounter with my earlier projects. While thousands of apps capture the same purpose such as IMDB and Letterboxd, coding all of that on your own is a massive undertaking. Obviously to create those sites from scratch while also putting your own spin on it could be something done, but it goes beyond the requirements of this project. So I built Reel 2 Real focusing more on the key features that users would interact with. 
 
 I used the moviedb.org API to fetch the information I needed to search and display all of the films. This would overlap with the Rails API where users, films, and favorites were created and stored. Overall, I found the React framework to be very fun to code. Most of the issues arose from getting the API and the React front-end to be compatible. The react app would allow users to search through a variety of films using Top Rated and Now Playing as the main page. It was important to not limit the options for users to create their list of favorites while also having convenient access as they navigate throughout the app. 
 
 Starting with Rails, I had three models and serializers: user, film, and favorite film. A user would have many favorite films, but also films through that list because I needed to share the same films across various users instead of them only being assigned to one specific user given that it’s not their own exclusive content. This presents a similar situation to my Rails project where users could create their own games, but also play those created by different users without manipulating the routes and object's attributes. While each user was given an id after object initialization and instantiation, for films it was much different because I was fetching them from a movie database where all of the details are already hosted. The migrations would be based off the themoviedb API and so if the ids conflicted with one another, users would not have access to any list of films. The only seeded data needed to be the existing users with their personalized info. 
 
+![](https://i.imgur.com/ZNZBZ5B.png)
+
 The process for this project was a lot of back and forth of what did and didn’t work. If I could at least have existing users on the app to test whether some of the film features were successful, it would help me solve issues I left until the end such as the signup page and the search display. The strategy of working on the front-end and the back-end of the app simultaneously instead of separately is relatively confusing. However, I think because the visuals helped shape how I fixed the code, especially looking through the containers and CSS files, it ended up being more rewarding despite elevating time. Nearly half of the components were created before I successfully managed to link with the Rails API for this reason.
 
 Some of the greatest challenges that I faced with this project were building the routes and pages needed for a user to search for a specific film and displaying that information based on the film actions, reducer, and the map to state and dispatch to props methods in their respective components. This would have worked out better if I spent more time practicing with React and potentially building a condensed version before. But ultimately it all came together and what I found frequently was a lot of the errors were based on the smaller parts of the code rather than the overall functionality. For the Users controller, it was favorite films vs. films that lengthened the project time and missing parentheses and curly brackets shutting off central parts of the code that delayed the fetch methods and the switch and case for films to work successfully. 
+
+![](https://i.imgur.com/xQNfe7j.png)
 
 Once components were taking shape visually, it was important to make sure that not only all the requirements for this project were being completed, but that I also understood the functionality and navigation of the app from both the front-end and back-end. Considering the number of files involved in Rails and React, sometimes it gets confusing, even with the resources you have. I’ve always stressed that organization and structure is a crucial part of building apps so taking the time to learn what each element does before starting to code will pay off. Another thing would be to continue to practice with each programming language. There is never an endpoint in the learning process as coding is constantly involving and it’s imperative to stay updated and on track as I continue to move into the next chapter. It’s been quite a long journey, but the lessons that I’ve learned from working through this program have been incredibly valuable and instrumental in becoming a full stack web developer.
 
