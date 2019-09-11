@@ -1,15 +1,14 @@
 # Site settings
+author: Alex Zdatny
 title: Coding with Al
 header-img: img/home-bg.png
 email: alexzdatny@gmail.com
-copyright_name: alcasinoroyale
+copyright_name: Alex Zdatny
 description: > # this means to ignore newlines until "baseurl:"
-  My journey to becoming a web developer
+  My journey as a web developer.
 baseurl: "" # the subpath of your site, e.g. /blog
-twitter_username: AZdatny
+twitter_username: 
 github_username:  alcasinoroyale
-learn_profile: alcasinoroyale
-email_username: alexzdatny@gmail.com
 
 # Build settings
 markdown: kramdown
