@@ -1,7 +1,7 @@
 ---
 layout: post
-title:      "Underestimating Myself"
-date:       2019-09-29 15:20:37 +0000
+title:      "Struggles with Live Coding"
+date:       2019-09-29 11:20:38 -0400
 permalink:  underestimating_myself
 ---
 
