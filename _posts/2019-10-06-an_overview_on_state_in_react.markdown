@@ -18,14 +18,14 @@ class Signup extends Component {
   }
 ```
 
-React provides a method called **setState()**, which is used to change the update the component's initial state. An important rule to remember is that you cannot update state directly with:
+React provides a method called **setState()**, which is used to change or update the component's initial state. An important rule to remember is that you cannot update state directly with:
 ```
 this.state.attribute = "new value"
 ```
 
-This is because it will not be able to direct the changes or trigger a re-render of the component. Instead, you should create a new object that is passed into this.setState() with the key-value pair. This will notify React that the component needs to be re-rendered with the new state. When the state successfully changes, the React component will re-render with the updated data.
+This is because it will not be able to direct the changes or trigger a re-render of the component. Instead, you should create a new object that is passed into this.setState() with a key-value pair. This will notify React that the component needs to be re-rendered with the new state. When the state successfully changes, the React component will re-render with the updated data.
 
-Changing the state can also be utilized for **onClick** events. When a user clicks on a button that has access to one of the built functions, it will follow the actions that you provided in the component. In this example, I have created a function called incrementCounter, which includes this.setState() to increment the counter by 1.
+Changing the state can also be utilized for **onClick** events. When a user clicks on a button that has access to one of the built functions, it will follow the actions that you coded in the component. In this example, I have created a function called incrementCounter, which includes this.setState() to increment the counter by 1. Counter is the state key while this.state.counter + 1 is the value.
 
 ```
 incrementCounter = () => {
@@ -33,7 +33,7 @@ incrementCounter = () => {
 }
 ```
 
-When I click the button that's inside the return method of render, it will re-render with the new data incremented to the next value and return the new value of counter inside the h2 header. The button has access to the incrementCounter function because I attached to "this" and set it equal to onClick, an attribute of the button. This gives users the ability to transform data on the page in real-time.
+When I click a button that's inside the return method of render, it will re-render with the new data incremented to the next value and return it inside the h2 header. Since the button has access to incrementCounter noted, you can use this.incrementCounter and set it equal to onClick. This gives users the ability to transform data on the page in real-time.
 
 ```
   render() {
@@ -46,19 +46,19 @@ When I click the button that's inside the return method of render, it will re-re
   }
 ```
 
-Since state changes may occur asynchronously, you want to implement a callback as the second argument in the setState() method to access the newly updated state. You can then console.log the state to test and confirm that the state has been successfully updated.
+Since state changes may also occur asynchronously, you want to implement a callback as the second argument in the setState() method to access the newly updated state. You can then console.log the state to test and confirm that the state has been successfully updated as seen blow.
 
 ```
 this.setState( {username: 'alexz' }, () => console.log(this.state.username) ) ;
 ```
 
-Another crucial rule of state is that updates are merged on the first level. When modifying one of the object keys, the other key-value pairs will remain the same. To update the key of another object inside the state, you need to insert a spread operator **...** so that the other keys and values are not overwritten.
+Another crucial rule of state is that updates are merged on the first level. When modifying one of the object keys, the other key-value pairs will remain the same. To update the key of another object inside the state, you need to insert a spread operator **...** so that the other keys and values of the previous object are not overwritten. For example if you're setting up a profile with attributes such as name and bio and you want to add a new one to the list of users.
 
 ```
 this.setState(() => ({ 
   profile: { ...this.state.profile,
-    name: "Alex"
-    bio: "Full Stack Developer"
+    name: 'Alex',
+    bio: 'Full Stack Developer'
   }
  }
 ));
