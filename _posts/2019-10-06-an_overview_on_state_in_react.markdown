@@ -5,7 +5,7 @@ date:       2019-10-06 12:23:00 -0400
 permalink:  an_overview_on_state_in_react
 ---
 
-**State** is a Javascript Object that stores dynamic data in a React class component. The state is initialized in the class constructor and is inserted into the component after **super(props)**. One of the many reasons that programmers use state is so you can create components that are both dynamic and interactive.** Properties or keys** can be added to the component's state with values. For example, in a signup component, a username and password could be the state keys as seen below.
+**State** is a Javascript Object that stores dynamic data in a React class component. The state is initialized in the class constructor and is inserted into the component after **super(props)**. One of the many reasons that programmers use state is so you can create components that are both dynamic and interactive. **Properties or keys** can be added to the component's state with values. For example, in a signup component, a username and password could be the state keys as seen below.
 
 ```
 class Signup extends Component {
@@ -33,7 +33,7 @@ incrementCounter = () => {
 }
 ```
 
-When I click the button that's inside the return method of render, it will re-render with the new data incremented to the next value and return the new value inside the h2 header. This has access to the incrementCounter function because I attached to "this" and set it equal to onClick, an attribute of the button. This gives users the ability to transform data on the page in real-time.
+When I click the button that's inside the return method of render, it will re-render with the new data incremented to the next value and return the new value of counter inside the h2 header. The button has access to the incrementCounter function because I attached to "this" and set it equal to onClick, an attribute of the button. This gives users the ability to transform data on the page in real-time.
 
 ```
   render() {
