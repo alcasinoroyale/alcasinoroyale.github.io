@@ -1,6 +1,6 @@
 ---
 layout: post
-title:      "An Overview on State in React"
+title:      "An Overview of State in React"
 date:       2019-10-06 12:23:00 -0400
 permalink:  an_overview_on_state_in_react
 ---
