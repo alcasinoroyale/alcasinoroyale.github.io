@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "An Overview on State in React"
-date:       2019-10-06 16:22:59 +0000
+date:       2019-10-06 12:23:00 -0400
 permalink:  an_overview_on_state_in_react
 ---
 
@@ -44,7 +44,6 @@ When I click the button that's inside the return method of render, it will re-re
       </div>
     )
   }
-}
 ```
 
 Since state changes may occur asynchronously, you want to implement a callback as the second argument in the setState() method to access the newly updated state. You can then console.log the state to test and confirm that the state has been successfully updated.
@@ -53,7 +52,19 @@ Since state changes may occur asynchronously, you want to implement a callback a
 this.setState( {username: 'alexz' }, () => console.log(this.state.username) ) ;
 ```
 
-Another crucial rule of state is that updates are merged on the first level. When modifying one of the object keys, the other key-value pairs will remain the same. To update the key of another object inside the state, you need to insert a spread operator so that the other keys and values are not overwritten. This is incredibly important for building a successful user interface because you do not want those using your application to lose personal information that they have already provided.
+Another crucial rule of state is that updates are merged on the first level. When modifying one of the object keys, the other key-value pairs will remain the same. To update the key of another object inside the state, you need to insert a spread operator **...** so that the other keys and values are not overwritten.
+
+```
+this.setState(() => ({ 
+  profile: { ...this.state.profile,
+    name: "Alex"
+    bio: "Full Stack Developer"
+  }
+ }
+));
+```
+
+This is incredibly important for building a successful user interface because you do not want those using your application to lose personal information that they have already provided.
 
 
 
