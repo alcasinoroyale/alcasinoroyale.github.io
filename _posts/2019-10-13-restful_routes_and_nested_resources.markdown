@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Restful Routes and Nested Resources"
-date:       2019-10-13 21:11:31 +0000
+date:       2019-10-13 17:11:32 -0400
 permalink:  restful_routes_and_nested_resources
 ---
 
@@ -32,12 +32,17 @@ In my games show view, I have a link to edit the game if you are the creator and
 
 It's also important to note that games#update is displayed twice with two different HTTP verbs PATCH and PUT. One of the first issues that I ran into while building renecades_gameroom was making sure that each game had a stable ID. This was crucial since I had attributes seeded in the database and one simple mistake could overwrite the entire object. If I wanted to only edit a single attribute of a game, I would use PATCH. While PUT gives the user more control, it's not always necessary to send all of the parameters through again. 
 
-Moving forward to Nested Resources, this can become overwhelming when trying to differentiate routes. In Renecades Gameroom, I encountered multiple errors because either the stack level was too deep or the resources conflicted with each other. For example while users can create their own games, it's not necessary to include games as a nested resource of users. This is because categories, tokens, and reviews are also involved in the application. 
+With Nested Resources, this can become overwhelming when you have more than a few and are trying to differentiate routes. In Renecades Gameroom, I encountered multiple errors from the start because either the stack level was too deep or the resources conflicted with each other. For example while users have the ability to create their own games, it's not necessary to include games as a nested resource of users. This is because categories, tokens, and reviews are also involved in the application. 
 
-For example if User#1 wanted to write the second review for game#1 that belongs to category#1, but was also created by #User4. This would mean that the specific review route is category/1/game/1/review/2, but what happens to the user. Instead, I use the model relationships and foreign keys in order to list the attributes for that specific review. In this application, a game has a foreign key called creator_id that corresponds to the user. Since the game also belongs to a category described the model, it no longer becomes part of the URI pattern. So now if I wanted to see the reviews for game#1, the route would be game/1/reviews. When I debug with binding.pry to make sure that the game still holds these attributes and keys, they are not affected. 
+For example if User#1 wanted to write the second review for game#1 that belongs to category#1, but was also created by #User4. This would mean that the specific review route is category/1/game/1/review/2, but what happens to the user. Instead, I use the model relationships and foreign keys in order to list the attributes for that specific review. 
+
+Since a game has a foreign key called creator_id that corresponds to the user and the game also belongs to a category described the model, user and category no longer becomes part of the URI pattern. So now if I wanted to see the reviews for game#1, the route would be game/1/reviews. 
 
 ![](https://i.imgur.com/ZfECfCQ.png)
+
 ![](https://i.imgur.com/FwxXGCP.png)
+
+When I debug with binding.pry to make sure that the game still holds these attributes and keys, they are not affected. 
 
 
 
