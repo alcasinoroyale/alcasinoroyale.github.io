@@ -1,0 +1,12 @@
+---
+layout: post
+title:      "The Job Search"
+date:       2019-10-20 22:23:34 +0000
+permalink:  the_job_search
+---
+
+One of the most important things that I've learned from my job search is that there are always opportunities to expand your resume. Rejection can generate many different reactions, but it should never mean that it's the end of the road. Having thoughts of "I don't have as much experience as other candidates" or "this was not the right career path" will not help you move forward. If you spend too much time focusing on that, it will derail the train and prevent you from reaching your goals. I've encountered a handful of roadblocks as a programming student, some of which I never thought I would make it past, but I did. Going into an industry that is constantly evolving, you need to be open-minded, but also patient with yourself and the process.
+
+Throughout my journey through The Flatiron School, I developed a strong understanding of several programming languages and frameworks, which included Ruby, Javascript, and React. Reading through many applications for Full Stack Development and Software Engineering positions, I've been anxious about the requirements because they mention languages that I have yet to become proficient with such as Python and C++. Knowing that I barely had any experience with Ruby and Javascript before Flatiron, this is a great opportunity to learn and build with other languages. I think that employers like to see that you challenge yourself, not just by creating new projects and features, but also going beyond what's expected of you as an entry-level candidate.
+
+The Job Search can be a stressful experience, but it's a chance to improve in areas that you're not necessarily comfortable with. As someone who has social anxiety, networking with people that I don't know personally whether it's recruiters, managers, or other software engineers can be difficult. In one of my previous blog posts, I said that nothing is built without a support system, but this doesn't just have to apply to programming. It can be easier to code without an audience, it can be easier to just submit applications and hope for the best, but making connections will make the path to becoming a successful software engineer more enjoyable. Everyone that you interact with during your job search not only started from somewhere, but also might have had similar experiences as you.
