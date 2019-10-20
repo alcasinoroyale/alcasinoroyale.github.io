@@ -1,10 +1,11 @@
 ---
 layout: post
-title:  "Why did I decide to learn software development?"
-date:   2017-07-12 21:35:04 -0400
+title:      "Why did I decide to learn software development?"
+date:       2017-07-12 21:35:04 -0400
+permalink:  why_did_you_decide_to_learn_software_development
 ---
 
-Building and creating have always been passions of mine from an early age. Whether it was spending hours constructing things with Legos, sketching floor plans of houses, or building my communities of SIMS, I was constantly trying to craft my own masterpiece, something imaginative and unique. I also learned how to use and navigate a computer pretty quickly so I would spend a good amount of time using Adobe Creative Suite, CAD, and Blender. With that in mind, I became very interested in pursuing architecture in high school, but it was never something I followed through with. When I started applying to colleges, journalism seemed like a much easier route until I decided what I really wanted to do. Writing was also one of my strengths so I figured it could be something enjoyable
+Building and creating have always been passions of mine from an early age. Whether it was spending hours constructing things with Legos, sketching floor plans of houses, or building my communities of SIMS, I was constantly trying to craft my own masterpiece, something imaginative and unique. I also learned how to use and navigate a computer pretty quickly so I would spend a good amount of time using Adobe Creative Suite, CAD, and Blender. With that in mind, I became very interested in pursuing architecture in high school, but it was never something I followed through with. When I started applying to colleges, journalism seemed like a much easier route until I decided what I really wanted to do. Writing was also one of my strengths so I figured it could be something enjoyable.
 
 I kept going back and forth through each semester, contemplating whether journalism was the track I wanted to follow, and eventually started taking film study courses as part of my minor. This not only allowed me to analyze films but really consider all of the elements that go into the production of one. Being mellow as well as an introvert in the current environment surrounding media didn’t necessarily make jumping into journalism an appealing career path. I always liked working behind-the-scenes instead of interviewing and being on camera. However, I did gain some experience in both settings, researching and writing articles for the college newspaper as well as working as production assistant on the university network. 
 
