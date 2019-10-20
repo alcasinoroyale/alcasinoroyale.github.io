@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "The Job Search"
-date:       2019-10-20 22:23:34 +0000
+date:       2019-10-20 18:23:35 -0400
 permalink:  the_job_search
 ---
 
@@ -9,4 +9,4 @@ One of the most important things that I've learned from my job search is that th
 
 Throughout my journey through The Flatiron School, I developed a strong understanding of several programming languages and frameworks, which included Ruby, Javascript, and React. Reading through many applications for Full Stack Development and Software Engineering positions, I've been anxious about the requirements because they mention languages that I have yet to become proficient with such as Python and C++. Knowing that I barely had any experience with Ruby and Javascript before Flatiron, this is a great opportunity to learn and build with other languages. I think that employers like to see that you challenge yourself, not just by creating new projects and features, but also going beyond what's expected of you as an entry-level candidate.
 
-The Job Search can be a stressful experience, but it's a chance to improve in areas that you're not necessarily comfortable with. As someone who has social anxiety, networking with people that I don't know personally whether it's recruiters, managers, or other software engineers can be difficult. In one of my previous blog posts, I said that nothing is built without a support system, but this doesn't just have to apply to programming. It can be easier to code without an audience, it can be easier to just submit applications and hope for the best, but making connections will make the path to becoming a successful software engineer more enjoyable. Everyone that you interact with during your job search not only started from somewhere, but also might have had similar experiences as you.
+The job search can be a stressful experience, but it's a chance to improve in areas that you're not necessarily comfortable with. As someone who has social anxiety, networking with people that I don't know personally whether it's recruiters, managers, or other software engineers can be difficult. In one of my previous blog posts, I said that "Nothing is built without a support system", but this doesn't just have to apply to programming. It can be easier to code without an audience, it can be easier to just submit applications and hope for the best, but making connections will make the path to becoming a successful software engineer more enjoyable. Everyone that you interact with during your job search not only started from somewhere, but also might have had similar experiences as you.
