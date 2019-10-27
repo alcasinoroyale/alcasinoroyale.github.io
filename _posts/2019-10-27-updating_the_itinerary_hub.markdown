@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Updating The Itinerary Hub"
-date:       2019-10-27 19:04:53 +0000
+date:       2019-10-27 15:04:53 -0400
 permalink:  updating_the_itinerary_hub
 ---
 
@@ -11,7 +11,11 @@ When I first built The Itinerary Hub, I heavily relied on bootstrap for the styl
 
 ![](https://i.imgur.com/kWfVj14.png)
 
-In the previous version, the navigation bar would overlap with "The Itinerary Hub" when you reduced the window size, but it also integrated with the page's content. Even though the MVC architecture worked successfully, the application's design only acted as a foundation of what's to come. Throughout the past few days, I've tested different code with both JS and CSS in order to fix this, but decided on the responsive menu, which has been used across a variety of applications. There are some amazing tools for building this feature, but one thing that came to mind immediately was Font Awesome. Instead of modifying the navigation menu inside layout.erb significantly, I was able to use the font awesome bars icon and some of my original code combined with JS. This was helped by a couple of tutorials I watched that offered an alternative to building a new navigation. Notably, the JS function, which allows the navbar to be responsive once the screen size changes and the links are integrated inside of the burger.
+In the previous version, the navigation bar would overlap with "The Itinerary Hub" when you reduced the window size, but it also integrated with the page's content. Even though the MVC architecture worked successfully, the application's design only acted as a foundation of what's to come. Throughout the past few days, I've tested different code with both JS and CSS in order to fix this, but decided on the responsive menu, which has been used across a variety of applications. 
+
+There are some amazing tools for building this feature, but one thing that immediately came to mind was one of my favorite open source projects called Font Awesome. I've also used Font Awesome for the social media icons on my portfolio site and for the travel icons in the "Create Itinerary" form. 
+
+Instead of modifying the navigation menu inside layout.erb significantly to make it responsive, I was able to use the Font Awesome bars icon and some of my original code combined with JS. This was helped by a couple of tutorials I watched that offered an alternative to building a new navigation. Notably, the JS function, which allows the navbar to be responsive once the screen size changes and the links are integrated inside of the bars icon.
 
 ```
 /// The first a element inside of the navigation class ///
@@ -31,7 +35,7 @@ In the previous version, the navigation bar would overlap with "The Itinerary Hu
      </script>
 ```
 
-If we take a look at the updated [CSS file](https://github.com/alcasinoroyale/the_itinerary_hub/blob/master/public/css/style.css) for The Itinerary Hub, the most significant modifications are:
+If we take a look at the updated [CSS file](https://github.com/alcasinoroyale/the_itinerary_hub/blob/master/public/css/style.css) for The Itinerary Hub, the most crucial changes are:
 
 ```
 @media screen and (max-width: 1080px) {
