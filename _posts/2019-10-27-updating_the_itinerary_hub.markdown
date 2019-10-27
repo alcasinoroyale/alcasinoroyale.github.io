@@ -7,7 +7,9 @@ permalink:  updating_the_itinerary_hub
 
 ![](https://i.imgur.com/jF6KFWu.png)
 
-When I first built The Itinerary Hub, I heavily relied on bootstrap for the styling and functionality, but I wanted to travel back and implement some styling changes given my greater knowledge of CSS. One of the reasons that users consistently return to a specific application is not only because the features are intuitive, but they also appreciate the design. Creating a compelling user interface from scratch can sometimes be a difficult task, especially when you're working across mulitple files and have a threshold of classes and IDs. Organization and naming is crucial to knowing what the end result will be once you've made a number of changes to the CSS file. Since I've decided to utilize the main css file for all of the styling instead of bootstrap, I sketched out each focus of the application. For example, the navigation bar was one of the elements that changed signficantly from what I originally had. 
+When I first built The Itinerary Hub, I heavily relied on bootstrap for the styling and functionality, but I wanted to travel back and implement some styling changes given my greater knowledge of CSS. One of the reasons that users consistently return to a specific application is not only because the features are intuitive, but they also appreciate the design. Creating a compelling user interface from scratch can sometimes be a difficult task, especially when you're working across mulitple files and have a threshold of classes and IDs. 
+
+Organization and naming are incredibly valuable to knowing what the end result will be once you have made a number of changes to the CSS file. Since I decided to utilize the main css file for all of the styling instead of bootstrap, I sketched out each focus of the application. While The Itinerary Hub doesn't have nearly as many files as my other portfolio projects, it's still important to use comments and selectors to map out the CSS file. The element that changed significantly besides the color theme was the navigation bar. 
 
 ![](https://i.imgur.com/kWfVj14.png)
 
