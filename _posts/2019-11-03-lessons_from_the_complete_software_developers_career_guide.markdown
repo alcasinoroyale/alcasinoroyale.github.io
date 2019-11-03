@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Lessons from The Complete Software Developer's Career Guide"
-date:       2019-11-03 22:50:26 +0000
+date:       2019-11-03 17:50:27 -0500
 permalink:  lessons_from_the_complete_software_developers_career_guide
 ---
 
@@ -20,3 +20,5 @@ Sonmez explains that you should study the stack, the features and libraries, and
 While Sonmez discusses what can help software developers from a technical perspective, he also describes how becoming actively involved in the software development community will lead to more career opportunities. All software developers, regardless of whether they attended college, a boot camp, or were self-taught, have faced similar challenges and experiences during their programming journey. 
 
 In the workplace, you’ll likely be working with a team or with a variety of departments to design and build applications. If you network with others in the industry consistently, you will get a much better sense of how to interact and collaborate with co-workers and understand their perspectives. Employers don't hire machines, they want people they can trust and get along with.
+
+I would highly recommend to any software developer to purchase [this book here](https://www.amazon.com/Complete-Software-Developers-Career-Guide-ebook/dp/B073X6GNJ1) at Amazon. I look forward to reading the upcoming sections and what advice and lessons Sonmez shares more about in the industry.
