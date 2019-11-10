@@ -1,6 +1,6 @@
 ---
 layout: post
-title:      "Lessons from The Complete Software Developer's Career Guide"
+title:      "Lessons from The Complete Software Developer's Career Guide - Part 1"
 date:       2019-11-03 17:50:27 -0500
 permalink:  lessons_from_the_complete_software_developers_career_guide
 ---
