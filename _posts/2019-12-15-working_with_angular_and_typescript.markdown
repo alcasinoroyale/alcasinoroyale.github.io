@@ -52,9 +52,9 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'date-display',
   template: 
- `<div>
+ <div>
     <h3>{{ today | date }}</h3>
-  <div>`
+  <div>
 })
 
 export class DateDisplayComponent {
