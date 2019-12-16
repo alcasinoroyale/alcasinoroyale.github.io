@@ -49,6 +49,13 @@ Inside date-display.component.ts
 ```
 import { Component } from '@angular/core';
 
+@Component({
+  selector: 'date-display',
+	template: `<div>
+	<h3> {{ today | date }} </h3>
+	<div>`
+})
+
 export class DateDisplayComponent {
   today:  number = Date.now();
 }
