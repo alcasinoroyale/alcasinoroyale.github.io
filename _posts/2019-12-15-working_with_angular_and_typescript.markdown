@@ -51,8 +51,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'date-display',
-	template: './date-display.component.html,
-	styleUrls: [ './date-display.component.scss' ]
+	template: './date-display.component.html'
 })
 
 export class DateDisplayComponent {
@@ -60,7 +59,7 @@ export class DateDisplayComponent {
 }
 ```
 
-The component will have a template where the date will be displayed with today as the variable inside the div and heading such as {{ today || date }}. Now if you wanted this specific date to be part of the header, you can go to the header's html file and write `<date-display></date-display>` which will appear on each page that you have implemented the header.
+The component will have a template where the date will be displayed with today as the variable inside the div and heading. Now if you wanted this specific date to be part of the header, you can go to the header's html file and write `<date-display></date-display>` which will appear on each page that you have implemented the header.
 
 
 
