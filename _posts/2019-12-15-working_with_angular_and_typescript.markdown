@@ -51,7 +51,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'date-display',
-	template: './date-display.component.html'
+  templateUrl: './date-display.component.html'
+  styleUrls: ['./date-display.component.scss']
 })
 
 export class DateDisplayComponent {
