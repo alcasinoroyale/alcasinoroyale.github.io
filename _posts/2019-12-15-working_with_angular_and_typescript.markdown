@@ -51,9 +51,9 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'date-display',
-    template: `<div>
+    template: <div>
       <h3>{{today | date}}</h3>
-    </div>`
+    </div>
    })
    export class DatePipeComponent {
      today: number = Date.now();
