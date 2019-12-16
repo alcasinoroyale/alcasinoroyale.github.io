@@ -46,4 +46,21 @@ import { DateDisplayComponent } from './date-pipe.component';
 
 Inside date-display.component.ts
 
+```
+import { Component } from '@angular/core';
+
+@Component({
+    selector: 'date-display',
+    template: `<div>
+      <h3>{{today | date}}</h3>
+    </div>`
+   })
+   export class DatePipeComponent {
+     today: number = Date.now();
+   }
+```
+
+The component has a template where the date will be displayed with today as the variable inside an h3 heading. Now if you wanted this specific date to be part of the header, you can go to the header's html file and write `<date-display></date-display>`, which will appear on each page that you have implemented the header.
+
+
 
