@@ -1,11 +1,11 @@
 ---
 layout: post
-title:      "Integrating Bootstrap Components with Angular"
-date:       2019-12-22 22:36:34 +0000
+title:      "Integrating Bootstrap with Angular"
+date:       2019-12-22 17:36:35 -0500
 permalink:  integrating_bootstrap_components_with_angular
 ---
 
-When building front-end applications, there are a number of JS and CSS frameworks that you can utilize to enhance the design and functionality of your project. One of the integrations that I've currently been working with is Bootstrap and Angular. While Angular gives you the ability to enchance your HTML, designing responsive elements such as tables, buttons, dropdown menus, and date ranges isn't as exclusive or organized without Bootstrap. 
+When building front-end applications, there are a number of JS and CSS frameworks that you can utilize to enhance the design and functionality of your project. One of the integrations that I've currently been working with is Bootstrap and Angular. While Angular gives you the ability to enchance your HTML, designing responsive elements such as tables, buttons, dropdown menus, and date ranges isn't as exclusive or organized without Bootstrap. Early on in my software development journey, I rarely used Bootstrap because I thought that it would hinder my understanding of manual CSS and I wanted to make sure that I was comfortable implementing that code without encountering errors. 
 
 Having integrated Bootstrap with other JS frameworks such as React, not only does it decrease the time consuming process of building all of the CSS files from scratch, but it also provides a more functional structure. A great lesson that Flatiron taught me was "Don't Repeat Yourself" and CSS can sometimes be incredibly repetitive if it narrows down to the specific attributes of each element in your code. It could certainly be great practice to learn how to structure CSS manually, but as the project and file sizes increase, you want to be able to use the development time wisely. Bootstrap becomes crucial for this purpose because it will achieve the same goals at a much more accelerated rate.
 
