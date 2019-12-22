@@ -1,0 +1,14 @@
+---
+layout: post
+title:      "Integrating Bootstrap Components with Angular"
+date:       2019-12-22 22:36:34 +0000
+permalink:  integrating_bootstrap_components_with_angular
+---
+
+When building front-end applications, there are a number of JS and CSS frameworks that you can utilize to enhance the design and functionality of your project. One of the integrations that I've currently been working with is Bootstrap and Angular. While Angular gives you the ability to enchance your HTML, designing responsive elements such as tables, buttons, dropdown menus, and date ranges isn't as exclusive or organized without Bootstrap. 
+
+Having integrated Bootstrap with other JS frameworks such as React, not only does it decrease the time consuming process of building all of the CSS files from scratch, but it also provides a more functional structure. A great lesson that Flatiron taught me was "Don't Repeat Yourself" and CSS can sometimes be incredibly repetitive if it narrows down to the specific attributes of each element in your code. It could certainly be great practice to learn how to structure CSS manually, but as the project and file sizes increase, you want to be able to use the development time wisely. Bootstrap becomes crucial for this purpose because it will achieve the same goals at a much more accelerated rate.
+
+Creating a new component in Angular `ng generate component home` generally launches an HTML, CSS, TS, and Spec TS file for that specific component. Though it's important to note that Bootstrap can be used differently depending on the resources you installed the packages from. For my Angular application, I used valor software to integrate Bootstrap because ngx was already being used for some other packages. The documentation on valor software provides an incredible resource to enchance your understanding of the both frameworks. If you're using the newest version of Angular and Bootstrap, then you would download the ingreation with `npm install ng-bootstrap --save`. 
+
+Another method for integrating both frameworks, especially if you wanted to start immediately building detailed components, would be `ng add ngx-boostrap --component modals`, which will create a modals component for your application by using your package manager to download and update all of the required dependencies. With Modals, you'll be able to add customizable dialogs and pop up menus. This is something that I had never done with any of previous applications so it was an interesting experience to see the final result. As I continue to improve my front-end development skills with Angular and Bootstrap, it's giving me a greater perspective on the variety of tech stacks that software developers implement to keep their applications consistent and robust.
