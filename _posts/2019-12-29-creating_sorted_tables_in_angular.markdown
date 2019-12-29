@@ -100,13 +100,13 @@ Inside of games-table.component.html, you can start building the table using the
 </thead>
 <tbody>
  <tr *ngFor="let game of sortedGames">
-   <td>{{ game.name }}</td>
-	 <td>{{ game.objective }}</td>
-	 <td>{{ game.players }}</td>
-	 <td>{{ game.rewardPoints }}</td>
-	 <td>{{ game.genre }}</td>
-	 <td>{{ game.category }}</td>
-	</tr>
+  <td>{{game.name}}</td>
+  <td>{{game.objective}}</td>
+  <td>{{game.players}}</td>
+  <td>{{game.rewardPoints}}</td>
+  <td>{{game.genre}}</td>
+  <td>{{game.category}}</td>
+ </tr>
 </tbody>
 </table>
 </div>
@@ -169,6 +169,7 @@ function compare(a: number | string, b: number | string, isAsc: boolean) {
 }
 ```
 
+The sortGames method first takes an argument of sort and then sets the specific slice of each to the data. If sort isn't active or the sort direction is empty, it will display the table with its original components. Each time a heading is clicked, the data inside the table will be sorted in ascending order based on the content for the specific game object, in this case a string or a number. For example, if the game names are being sorted, the first row of the table would be all of Air Hockey's information. If the heading is clicked again, the sort direction would then switch the names to descending order.
 
 
 
