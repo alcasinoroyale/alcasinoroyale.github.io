@@ -100,19 +100,19 @@ Inside of games-table.component.html, you can start building the table using the
 </thead>
 <tbody>
  <tr *ngFor="let game of sortedGames">
-  <td>{{game.name}}</td><td>{{game.name}}</td>
-  <td>{{game.objective}}</td>
-  <td>{{game.players}}</td>
-  <td>{{game.rewardPoints}}</td>
-  <td>{{game.genre}}</td>
-  <td>{{game.category}}</td>
+  <td>game.name</td>
+  <td>game.objective</td>
+  <td>game.players</td>
+  <td>game.rewardPoints</td>
+  <td>game.genre</td>
+  <td>game.category</td>
  </tr>
 </tbody>
 </table>
 </div>
 ```
 
-The headings and the attributes for each game will be displayed inside the table, but we still need to build the appropriate functions to sort the table. 
+The headings and the attributes for each game will be displayed inside the table, but we still need to build the appropriate functions to sort the table. Each attribute inside the sorted list should also be closed with {}.
 
 Arguably the most crucial code inside the table is `matSort (matSortChange)="sortGames($event)`
 This is referring to the sortGames function that we need to build inside of the typescript file. Before we start creating the sorting functions, games-table.component.ts should look like this.
