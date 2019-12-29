@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Creating Sorted Tables in Angular"
-date:       2019-12-29 21:53:05 +0000
+date:       2019-12-29 16:53:06 -0500
 permalink:  creating_sorted_tables_in_angular
 ---
 
@@ -23,36 +23,36 @@ After we have created the game class, we can also start building the array of ob
 ```
 export const GAMES: Game[] = [
   {
-	  name: 'Air Hockey',
-		objective: 'First player to score 7 goals wins the game'
-		players: 2,
-		rewardPoints: 80,
-		genre: 'Sport',
-		category: 'Table Game'
+	 name: 'Air Hockey',
+	 objective: 'First player to score 7 goals wins the game'
+	 players: 2,
+	 rewardPoints: 80,
+	 genre: 'Sport',
+	 category: 'Table Game'
 	},
 	{
-	  name: 'The Witcher 3: Wild Hunt',
-		objective: 'Explore the world and complete the character's journey through missions and side quests'
-		players: 1,
-		rewardPoints: 130,
-		genre: 'Role Playing',
-		category: 'Video Game'
+	 name: 'The Witcher 3: Wild Hunt',
+	 objective: 'Explore the world and complete the character's journey through missions and side quests'
+	 players: 1,
+	 rewardPoints: 130,
+	 genre: 'Role Playing',
+	 category: 'Video Game'
 	},
 	{
-	  name: 'Scrabble',
-		objective: 'Player with the highest score wins the game'
-		players: 2,
-		rewardPoints: 80,
-		genre: 'Word Game',
-		category: 'Board Game'
+	 name: 'Scrabble',
+	 objective: 'Player with the highest score wins the game'
+	 players: 2,
+	 rewardPoints: 80,
+	 genre: 'Word Game',
+	 category: 'Board Game'
 	},
 	{
-	  name: 'Pinball',
-		objective: 'Climb the overall leaderboard'
-		players: 1,
-		rewardPoints: 100,
-		genre: 'Arcade',
-		category: 'Table Game'
+	 name: 'Pinball',
+	 objective: 'Climb the overall leaderboard'
+	 players: 1,
+	 rewardPoints: 100,
+	 genre: 'Arcade',
+	 category: 'Table Game'
 	}
 ]
 ```
@@ -70,7 +70,7 @@ import { Game, GAMES} from '../game'
   styleUrls: [./games-table.component.css']
 	})
 	
-	export class GamesTableComponen {
+	export class GamesTableComponent {
 	
 	constructor(){}
 	
@@ -89,14 +89,14 @@ Inside of games-table.component.html, you can start building the table using the
 <div class="gamesTable">
 <table class="table table striped" matSort (matSortChange)="sortGames($event)
 <thead>
-  <tr>
-	  <th mat-sort-header="name" scope="col">Name</th>
-		<th mat-sort-header="objective" scope="col">Objective</th>
-		<th mat-sort-header="players" scope="col"># of Players</th>
-		<th mat-sort-header="rewardPoints" scope="col">Reward Points</th>
-		<th mat-sort-header="genre" scope="col">Genre</th>
-		<th mat-sort-header="category" scope="col">Category</th>
-	</tr>
+ <tr>
+	<th mat-sort-header="name" scope="col">Name</th>
+	<th mat-sort-header="objective" scope="col">Objective</th>
+	<th mat-sort-header="players" scope="col"># of Players</th>
+	<th mat-sort-header="rewardPoints" scope="col">Reward Points</th>
+	<th mat-sort-header="genre" scope="col">Genre</th>
+	<th mat-sort-header="category" scope="col">Category</th>
+ </tr>
 </thead>
 <tbody>
  <tr *ngFor="let game of sortedGames">
@@ -112,11 +112,15 @@ Inside of games-table.component.html, you can start building the table using the
 </div>
 ```
 
-The headings and the attributes for each game will be displayed inside the table, but we still need to build the appropriate functions to sort the table. Inside of the table class there's the code `matSort (matSortChange)="sortGames($event)`. This is referring to the sortGames function that we need to create inside of the typescript file. Going back to our original sketch, we want to incorporate sortedGames so that it's assigned to the array of objects from the Game class. 
+The headings and the attributes for each game will be displayed inside the table, but we still need to build the appropriate functions to sort the table. 
+
+Arguably the most crucial code inside the table is `matSort (matSortChange)="sortGames($event)`
+This is referring to the sortGames function that we need to build inside of the typescript file. Before we start creating the sorting functions, games-table.component.ts should look like this.
 
 ```
 import { Component } from @ angular/core'
 import { Game, GAMES} from '../game'
+import { Sort } from '@angular/material/sort';
 
 @Component({
   selector: 'app-games-table'
@@ -124,7 +128,7 @@ import { Game, GAMES} from '../game'
   styleUrls: [./games-table.component.css']
 	})
 	
-	export class GamesTableComponen {
+	export class GamesTableComponent {
 	
 	games = GAMES;
 	sortedGames: Game[];
@@ -132,9 +136,40 @@ import { Game, GAMES} from '../game'
 	constructor(){
 	  this.sortedGames = this.games.slice()
 	}
-	
 }
 ```
+
+A couple of things to note here is that Sort is imported from the angular material package, the games array is now set to sortedGames, and we also utiltize the slice method inside of the constructor so the correct slice of data is passed into the table when the headings are sorted by the user. The sortGames function should then look like this below:
+
+```
+sortGames(sort: Sort) {
+ const data = this.games.slice()
+ if (!sort.active || sort.direction === '') {
+  this.sortedGames = data;
+	return;
+	}
+	
+this.sortedGames = data.sort((a, b) => {
+const isASC = sort.direction === 'asc';
+switch (sort.active) {
+   case 'name': return compare(a.name, b.name, isAsc);
+   case 'objective': return compare(a.objective, b.objective, isAsc);
+   case 'players': return compare(a.players, b.players, isAsc);
+   case 'rewardPoints': return compare(a.rewardPoints, b.rewardPoints, isAsc);
+   case 'genre': return compare(a.genre, b.genre, isAsc);
+   case 'category': return compare(a.category, b.category, isAsc);
+	 default: return 0;
+   }
+  })
+ }
+}
+
+function compare(a: number | string, b: number | string, isAsc: boolean) {
+  return (a < b ? -1 : 1) * (isAsc ? 1 : -1);
+}
+```
+
+
 
 
 
