@@ -7,6 +7,9 @@ permalink:  creating_sorted_tables_in_angular
 
 One of the main components of the front-end development project that I've been working on is a sortable table in Angular. For this post, I'm going to focus on how I would convert the game objects from my Ruby on Rails application into a sortable table for Angular. A great feature of Angular is that you can create classes and models with individual typescript files that you can import into your components. To get started, you can build game.ts, which will describe the Game class as well as the array of objects inside of it. There are several attributes attached to the original game object, but for this example, I only want to display six of them inside the table. A Game will have a name, objective, # of players, reward points, genre, and a category. 
 
+**game.ts**
+*Game Class*
+
 ```
 export class Game {
   name: string;
@@ -19,6 +22,9 @@ export class Game {
 ```
 
 After creating the game class, we can also start building an array of objects. This can be accomplished by creating a variable with the const keyword. This variable will act on the Game class so that we have access to the array of objects and display the game details inside the table.
+
+**game.ts**
+*Array of Game Objects*
 
 ```
 export const GAMES: Game[] = [
@@ -60,6 +66,10 @@ export const GAMES: Game[] = [
 Since I want to display the table information inside of a specific component, I would first create a component with `ng generate component games-table`. This creates an HTML, CSS, and TS file for the games-table component.
 
 Inside games-table.ts, you want to begin with a simple sketch before you start creating functions, but make sure to import the game class as well as the array of objects that holds the attributes for each specific game.
+
+**games-table.component.ts**
+*Initial Typescript for Games Table Component*
+
 ```
 import { Component } from @ angular/core'
 import { Game, GAMES} from '../game'
@@ -81,7 +91,8 @@ After building the game class and component, you want to start constructing the 
 
 To confirm that the module was installed successfully, check the dependencies inside of package.json so that it lists `"@angular/material"` with the latest version. Also, import the module into app.module.ts with `import { MatSortModule } from '@angular/material/sort'` and then add it as an import inside of @NgModule. It will likely not render the page or display the appropriate error in the console if the module isn't loaded correctly.
 
-Inside of games-table.component.html, you can start building the table using the mat-sort headers.
+**games-table.component.html**
+*Sorted Games Table*
 
 ```
 <h2>Games</h2>
@@ -115,7 +126,10 @@ Inside of games-table.component.html, you can start building the table using the
 The headings and the attributes for each game will be displayed inside the table, but we still need to build the appropriate functions to sort the table. Each attribute inside the sorted list should also be closed with {}.
 
 Arguably the most crucial code inside the table is `matSort (matSortChange)="sortGames($event)`
-This is referring to the sortGames function that we need to build inside of the typescript file. Before we start creating the sorting functions, games-table.component.ts should look like this.
+This is referring to the sortGames function that will be constructed near the the end of this post, but first you want to make sure that the file looks like this:
+
+**games-table.component.ts**
+*Before sortGames function*
 
 ```
 import { Component } from @ angular/core'
@@ -140,6 +154,9 @@ import { Sort } from '@angular/material/sort';
 ```
 
 A few lines of code to note here is that Sort is imported from the angular material package, the Game array is now set to sortedGames, and we also implement the slice method inside of the constructor so the correct slice of data is passed into the table when the headings are sorted by the user. The sortGames function should then look like this below:
+
+**games-table.component.ts** 
+*Sorting Functions*
 
 ```
 sortGames(sort: Sort) {
