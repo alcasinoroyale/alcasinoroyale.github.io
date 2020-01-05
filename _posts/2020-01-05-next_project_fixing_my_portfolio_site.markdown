@@ -1,9 +1,11 @@
 ---
 layout: post
 title:      "Next Project: Fixing My Portfolio Site"
-date:       2020-01-05 23:22:07 +0000
+date:       2020-01-05 18:22:07 -0500
 permalink:  next_project_fixing_my_portfolio_site
 ---
+
+![](https://i.imgur.com/dX5EKqb.png)
 
 One of the greatest learning experiences following my graduation from the Flatiron School was building my portfolio site from scratch rather than using a personalized landing page and templates. Since I had recently developed my React-Redux portfolio project, I figured that it would be an incredible opportunity showcase my skills and increase my proficiency with the React framework. It was certainly ambitious considering that it would be the first project outside of the curriculum and a similar production scale. After buying the domain, I wasn't sure how to begin the development process so I first mapped out the structure of my portfolio site on paper before creating any of the initial components. I also researched different features to gain an understanding of what fonts and themes could work. 
 
