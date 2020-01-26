@@ -7,6 +7,9 @@ permalink:  modifying_portfolio_site_features
 
 In my previous blog posts, I've discussed a handful of the portfolio site features that I wanted to implement in order to make it responsive and readable across various devices. Having used Bootstrap with other applications, I started researching some of best ways to transform components so that they are responsive on a different screen size. However, I encountered an issue that kept overriding all of the manual CSS that I had built so instead I used an incredible resource called npmjs.com, which offers a variety of open source packages to install into your applications. 
 
+![](https://i.imgur.com/ZmQ7tHm.png)
+![](https://i.imgur.com/Pm8GgTX.png)
+
 For the navigation, I implemented the react-responsive-navbar package created by Stephanie Tassone, which gives the developer the ability to customize the controls of a menu without relying on heavy CSS. This includes the menu size and the open and close buttons. If we take a look at the original code inside of the Navbar Component, the most important elements are the NavLinks because once you incorporate the responsive menu, it will change the structure and formatting. You want to make sure that these links are still accessible. 
 
 ```
