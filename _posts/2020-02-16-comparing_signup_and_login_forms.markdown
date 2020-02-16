@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Comparing Signup and Login Forms"
-date:       2020-02-16 23:01:21 +0000
+date:       2020-02-16 18:01:22 -0500
 permalink:  comparing_signup_and_login_forms
 ---
 
@@ -45,19 +45,36 @@ I decided to use a `formGroup` to implement the login which requires a username 
   <%= errors_for @user, :username %>
 ```
 
-The main difference is that Ruby on Rails is relying on the helper method of errors_for and the user model compared to Angular, which has the ng-model already set within the form-group. If we take a look inside a signup form of a React component, the input has a handleChange (this can be called anything) to detect whenever the text in the input changes. However, the structure of each value still has a handful of similarities in that we still assign properties such as a type, class, and name.
+The main difference is that Ruby on Rails is relying on the helper method of `errors_for` and the `@user` model compared to Angular, which has the ng-model already set within the form-group. If we take a look inside a signup form of a React component, the structure is similar to Angular and even Ruby on Rails in that it has properites such as a type, name, and class. However, there is a handleChange (this can be called anything) to detect whenever the text in the input changes and the username comes from the component's state set in the constructor. 
 
 ```
-  <label>Username</label>
-        <div className="control">
-          <input
-            type="text"
-            name="username"
-            placeholder="Enter username"
-            value={username}
-            onChange={this.handleChange}
-            required
-            />
-        </div>
+class Signup extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      username: '',
+      email: '',
+      bio: '',
+      password: '',
+    }
+  }
+
+  handleChange = event => {
+    this.setState({
+      [event.target.name]: event.target.value
+    })
+  }
+.....
+<div className="control">
+  <input type="text" name="username" placeholder="Enter username" value={username} 
+  onChange={this.handleChange} required />
+</div>
+......
 ```
+
+
+
+
+
+
 
