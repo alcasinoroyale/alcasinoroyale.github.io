@@ -64,12 +64,12 @@ class Signup extends Component {
       [event.target.name]: event.target.value
     })
   }
-.....
+...
 <div className="control">
   <input type="text" name="username" placeholder="Enter username" value={username} 
   onChange={this.handleChange} required />
 </div>
-......
+...
 ```
 
 
