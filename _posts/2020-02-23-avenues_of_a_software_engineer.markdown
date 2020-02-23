@@ -1,0 +1,16 @@
+---
+layout: post
+title:      "Avenues of a Software Engineer"
+date:       2020-02-23 21:54:49 +0000
+permalink:  avenues_of_a_software_engineer
+---
+
+Back in December, I finished reading "The Complete Software Developer's Career Guide," written by John Sonmez and it gave me an incredible perspective on the different avenues that a Software Engineer can go once they begin their career. During my job search, I've come across a variety of positions that have ranged in tech stacks and titles, but what I found most interesting is that they always included new frameworks, libraries, and languages that I had yet to build with. The next question then becomes do I invest my time learning all of these for this specific company. What if another opportunity comes along that is closer to my skillset. There's no perfect answer to this as the industry is constantly evolving and over time, the popularity of certain tech stacks will rise and fall.  
+
+When considering what avenue you want to pursue, it's really about what types of applications you want to develop, what are your interests and passions, how can you contribute and improve your existing skills. During a conversation that I had with a Flatiron alum, I asked whether it was important to fulfill all of the requirements for a position. At the time, I was struggling to find positions that were more entry-level based and became discouraged about my experience level. He said that you want to become a master at a specific tech stack, but that trying to learn every single programming language won't help you. 
+
+If you want to innovate and craft user experiences, front-end development is usually the route to go, if you enjoy dealing with data and creating the logic of an application, back-end would be the best option. After working with Angular for a few months, I've found that it shares a lot of similarities with React and even Ruby on Rails, which I utilized for my portfolio projects. Since I don't have much experience with Python or C++, would applying to back-end positions be harmful, not necessarily, but because I have more experience building front-end applications, it would seem like a detour from what I'm familiar with. That doesn't mean that later on, I won't encounter Python and C++ depending on the role as I would be collaborating with a variety of engineers across the tech stack for various projects. 
+
+Collaboration becomes an advantage because now you would have the opportunity to learn from more experienced engineers and apply those lessons to your own work. It also ties back to the fact that before attending The Flatiron School, the idea of building a successful application in a full stack architecture was impractical, but I did it. Sonmez discusses how software engineers navigate their day at work and while you will code for a decent amount of time, a lot more is spent experimenting and testing your code as well as learning new concepts and details about the industry and the company codebase. I don't think that you can go into an a position expecting to know all of the answers, to have all of the boxes checked, but what you can do is try to become as proficient with your existing skillset as you can and learn from those around you. If you're able to master that, then the possibilites are endless.
+
+
